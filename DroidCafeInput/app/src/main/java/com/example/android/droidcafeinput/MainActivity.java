@@ -94,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
                 startActivity(intent);
                 return true;
-            // ... code for other cases
             case R.id.action_status:
                 displayToast(getString(R.string.action_status_message));
                 return true;
@@ -109,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
     /**
      * Displays a Toast with the message.
